@@ -26,6 +26,17 @@
     align-items: center;
 }
 
+/*Float setBackground*/
+.setBackground{
+    margin: 6px 0px;
+    padding: 12px;
+}
+
+.setBackground .btn.selected{
+    border: 2px solid rgba(50, 50, 93, 0.25);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
 /*BTN*/
 .btn{
     display: inline-block;
@@ -551,24 +562,25 @@
     padding-right: 24px;
 }
 
-#clients-properties .carousel{
+/*carousel*/
+.carousel{
     scrollbar-width: none;
     transition: 0.25s;
     scroll-behavior: smooth;
 }
 
-#clients-properties .carousel .carousel-item{
+.carousel .carousel-item{
     width:380px;
     background-color: #fff;
 }
 
-#clients-properties .carousel .carousel-item-content{
+ .carousel .carousel-item-content{
     width:380px;
     height: 100%;
     padding: 24px;
 }
 
-#clients-properties .carousel .message::before{
+.carousel .message::before{
     display: block;
     padding-bottom: 36px;
     font-family: 'Font Awesome\ 5 Free';
@@ -578,45 +590,128 @@
     color:#feda53;
 }
 
-#clients-properties .carousel .message{
+.carousel .message{
     font-size: 16px;
     line-height: 28px;
     color:#b4b4b4;
 }
 
-#clients-properties .carousel .author{
+.carousel .author{
     margin-top: auto;
     padding: 0px;
     width: 100%;
     align-items: center;
 }
 
-#clients-properties .carousel .author .author-photo{
+.carousel .author .author-photo{
     width:60px;
     height:60px;
     vertical-align: middle;
     border-radius:60px;
 }
 
-#clients-properties .carousel .author-info{
+.carousel .author-info{
     padding-left: 15px;
 }
 
-#clients-properties .carousel .author .name{
+.carousel .author .name{
     display: block;
     color:#444245;
 }
 
-#clients-properties .carousel .author .profession{
+.carousel .author .profession{
     display: block;
     margin-top: 6px;
     color:#727B90;
+}
+/*comments*/
+#comments-form .message{
+    width: 640px;
+    margin:48px auto;
+}
+
+#comments-form .message-form{
+    max-width: 480px;
+    margin: auto;
+}
+
+#comments-form .message-form h3{
+   font-size: 24px;
+   margin: 0px;
+   text-align: center;
+   margin-bottom: 12px;
+}
+
+#comments-form .custom-input{
+    margin: 12px 0px;
+}
+
+#comments-form label{
+    min-width: 140px;
+    font-size: 16px;
+    padding-right: 12px;
+    text-align: right;
+}
+
+#comments-form .textarea,
+#comments-form .input{
+    padding: 6px 12px;
+    flex-grow: 1;
+    border: 2px solid #fe6603;
+}
+
+#comments-form .btn.submit{
+    margin-left: auto;
+    font-weight: bold;
+    color:#fff;
+    background-color: #2c17d8;
+}
+
+#comments-form .input{
+    height: 45px;
+}
+
+#comments-form .textarea{
+    resize: none;
+    height: 160px;
+}
+
+#comments-form .carousel{
+    flex-direction: row;
+    height: auto;
+}
+
+#comments-form .carousel .carousel-item{
+    margin: 24px auto;
+    width: calc(100% - 52px);
+    min-height: 120px;
+    height: auto;
+}
+
+#comments-form .carousel .carousel-item .carousel-item-content{
+    width: 100%;
+}
+
+#comments-form .carousel .apagarMensagem{
+    margin-top:24px;
+    margin-bottom: 12px;
+    margin-left: auto;
 }
 
 /*Page-Footer*/
 .page-footer{
     padding: 48px 0px;
     border-top: 2px solid #aab7c675;
+}
+
+.page-footer .sub-footer{
+    margin: 12px 0px;
+}
+
+.page-footer .sub-footer .creditos{
+    background:#2c17d8;
+    color: #fff;
+    font-size: 19px;
 }
 
 .page-footer .widget{
@@ -676,3 +771,49 @@
     min-width:340px;
     max-width: 340px;
 }
+
+.window{
+    position: fixed;
+    top:50%;
+    right:50%;
+    z-index: 10;
+    width: 100%;
+    max-width: 520px;
+    transform: translate(50%, -50%);
+    background-color: #fff;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.window:not(.show){
+    display: none;
+}
+
+.window .title{
+    font-size: 22px;
+    text-align: center;
+    margin:0px;
+    padding: 20px 6px;
+    background-color: #fe6603;
+    color:#fff;
+}
+
+.window h4{
+    font-size: 19px;
+    margin: 0px;
+    margin-bottom: 22px;
+}
+
+.window .grupo{
+    padding: 18px;
+    color:#444245;
+    background-color: #f3f2f0;
+}
+
+.window .name{
+    display: block;
+    margin-bottom: 12px;
+    text-align: left;
+    padding-left: 24px;
+    font-size: 16px;
+}
+
