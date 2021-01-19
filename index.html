@@ -18,7 +18,14 @@
     <!--body-->
     <body class="page">
         <!--header-->
-        <header class="page-header">
+        <div class="setBackground">
+            <div class="buttons">
+                <button id="btnColor1" class="btn" style="background:#9e00ff">Fundo 1</button>
+                <button id="btnColor2" class="btn" style="background:#00e0ff">Fundo 2</button>
+                <button id="btnColor3" class="btn" style="background:#ffd500">Fundo 3</button>
+            </div>
+        </div>
+        <header class="page-header bck-2">
             <div class="container">
                 <div class="page-header-logo">
                     <a class="logo" href="#">Real estate</a>
@@ -41,7 +48,7 @@
         <!--main-->
         <main class="page-main">
             <!--home-->
-            <div class="cg-box" id="home">
+            <div class="cg-box bck-2" id="home">
                 <div class="container">
                     <div class="cg-box-content">
                         <h1 class="title">
@@ -304,7 +311,39 @@
                 </div>
             </div>
             <!--Comments-->
-            <div class="cg-box" id="clients-properties">
+            <div class="cg-box" id="comments-form">
+                <div class="container">
+                    <div class="cg-box-content">
+                        <div class="cg-box-header nav d-flex">
+                            <h2 class="title">Mensagens de nossos visitantes</h2>
+                        </div>
+                        <div class="message">
+                            <div class="message-form">
+                                <h3>Deixe seu recado!</h3>
+                                <div>
+                                    <div class="custom-input d-flex">
+                                        <label class="fw-bold">Nome:</label>
+                                        <input class="input" type="text" id="nameAuthorAD"/>
+                                    </div>
+                                    <div class="custom-input d-flex">
+                                        <label class="fw-bold">Mensagem:</label>
+                                        <textarea class="textarea" id="messageAuthorAD"></textarea>
+                                    </div>
+                                    <div class="custom-input d-flex">
+                                        <button class="btn submit" id="subMessage">Submeter</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="messages">
+                                <div class="carousel d-flex" id="comments-carousel">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Clientes-->
+            <div class="cg-box bck-2" id="clients-properties">
                 <div class="cg-box-content">
                     <div class="cg-box-header nav d-flex container">
                         <a class="btn carousel-menu menu-left">
@@ -485,9 +524,22 @@
                         </div>
                     </div>
                 </div>
+                <div class="sub-footer">
+                    <button class="btn creditos" id="showCreditos"><i class="fas fa-info-circle"></i> Créditos</button>
+                </div>
             </div>
         </footer>
         <!--endfooter-->
+        <div class="window">
+            <div class="message">
+                <h3 class="title">DESENVOLVIMENTO DE SOFTWARE PARA WEB</h3>
+                <div class="grupo">
+                    <h4>Equipe:</h4>
+                    <strong class="name">Caio Graco</strong>
+                    <strong class="name">Gabriel</strong>
+                </div>
+            </div>
+        </div>
     </body>
     <!--endbody-->
 </html>
